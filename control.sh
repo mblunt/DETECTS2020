@@ -1,19 +1,18 @@
 #!/bin/bash
 
 #Change Directory
-cd /home/pi/Programs
+cd ~/Programs
 
-sudo sh transfer.sh &
-sudo sh monitor.sh &
-sudo python sensor.py &
+#ampersand runs programs in background
+sh transfer.sh &
+sh monitor.sh &
+#python sensor.py &
 
 #Disable if troubleshooting/testing
 #sudo sh UAH_starter.sh &
 
 #log
-a=echo "Control.sh run at: " 
-b=data
-"$a$b" >> control_log.txt
+echo "Control Program last run at: $(date)." > ~/Programs/transfer_log.txt
 
 sleep 720m
 sudo shutdown -r 0
