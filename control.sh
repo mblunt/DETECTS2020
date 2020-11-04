@@ -11,7 +11,9 @@ sudo python sensor.py &
 #sudo sh UAH_starter.sh &
 
 #log
-data > control_log.txt
+a=echo "Control.sh run at: " 
+b=data
+"$a$b" >> control_log.txt
 
 sleep 720m
 sudo shutdown -r 0
