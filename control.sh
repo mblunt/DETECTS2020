@@ -12,7 +12,7 @@ sh monitor.sh &
 #sudo sh UAH_starter.sh &
 
 #log
-echo "Control Program last run at: $(date)." > ~/Programs/transfer_log.txt
+echo "Control Program last run at: $(date)." > ~/Programs/control_log.txt
 
 sleep 720m
 sudo shutdown -r 0
