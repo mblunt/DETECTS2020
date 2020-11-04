@@ -5,17 +5,17 @@ while [ "$a" -lt 100 ]
 do
 
     #Change Directory
-    cd /home/pi/Programs
-
+    cd ~/Programs
+    
     sleep 1
 
     #make directory
     mkdir /tmp/experiment
 
     #Move files
-    mv ~/home/pi/*.json /tmp/experiment/ 
-    mv ~/home/pi/Programs/*.json /tmp/experiment/ 
+    mv ~/*.json /tmp/experiment/ 
+    mv ~/Programs/*.json /tmp/experiment/ 
 
-    #log
-    date > ~/home/pi/Programs/transfer_log.txt
+    #append current time to log
+    echo "Transfer Program running as of: $(date)." > ~/Programs/transfer_log.txt
 done
