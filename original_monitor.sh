@@ -60,3 +60,4 @@ fi
 
 #loop
 /bin/sh /home/pi/monitor.sh
+ 
