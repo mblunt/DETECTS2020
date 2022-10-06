@@ -1,0 +1,8 @@
+#!/bin/bash
+#Just a simple file to start the UAH raspberry pi team sender program and log the start time
+#be sure to remove the '--no-connect' when actually being sent to UAH
+
+echo $(date) > /home/pi/Programs/UAH_starter_log.txt
+
+sudo ./raspberry-pi-team-sender #--no-connect 
+#comment out "no connect" for actual program

@@ -1,0 +1,21 @@
+#!/bin/bash
+#This shellscript is run by crontabs at reboot. It serves to launch all of our required programs. 
+
+#Change Directory
+cd /home/pi/Programs
+
+#ampersand runs programs in background and are required to allow this shellscript to launch multiple programs
+sh /home/pi/Programs/transfer.sh &
+sh /home/pi/Programs/monitor.sh &
+python3 /home/pi/Programs/sps30-service.py &
+
+#Disable if troubleshooting/testing
+sh /home/pi/Programs/UAH_Starter.sh &
+
+#log
+touch /home/pi/Programs/startup_log.txt
+echo $(date) > /home/pi/Programs/startup_log.txt
+
+#start restart timer
+sleep 720m
+sudo shutdown -r 0

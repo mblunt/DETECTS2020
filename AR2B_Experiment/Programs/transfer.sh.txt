@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#make directory
+mkdir /tmp/experiment
+
+a=0
+while [ "$a" -lt 100 ] 
+do
+
+    #Move files
+    mv /home/pi/Programs/*.json /tmp/experiment/ 
+    mv /home/pi/*.json /tmp/experiment/	
+
+    #log
+    echo $(date) > /home/pi/Programs/transfer_log.txt
+
+    #sleep
+    sleep 1 
+
+done
