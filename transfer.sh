@@ -1,4 +1,6 @@
 #!/bin/bash
+#Runs as user, do not run as root. Change relative paths to be absolute paths in the future.
+
 
 a=0
 while [ "$a" -lt 100 ] 
