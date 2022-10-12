@@ -1,6 +1,6 @@
 # Experiment Test Report
 ### Update
-##### Project accepted on AR2B, experiment will be traveling to the International Space Station.
+##### Project accepted on AR2B, experiment will be traveling to the International Space Station. For any questions, please contact this experiment's Project Manager, Michael Blunt at michaelbblunt@gmail.com.
 
 ### 1.0	Introduction
 “Smells Like Particulate Matter” is Palmetto Scholars Academy’s team in the Data Evaluation From Testing via an Educational Challenge with Teachers and Students (DETECTS) initiative with the University of Alabama in Huntsville (UAH). The DETECTS mission will take place in ACES RED 2B (AR2B) on an external pallet attached to the International Space Station (ISS). AR2B’s primary objective is to study quantum entanglement technology in space satellite communications. The primary purpose of DETECTS on AR2B is to investigate the use of low-cost commercial-off-the-shelf (COTS) hardware. The team’s mission is to develop an experiment that utilizes a Raspberry Pi computer in conjunction with sensors to fulfill a scientific objective. The team must select a scientific objective to build an experiment around, program the Pi, and confirm that it meets all functional and environmental requirements through testing. In addition, they must professionally communicate their progress with a panel of evaluators. 
